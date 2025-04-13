@@ -52,8 +52,8 @@ telephone varchar(20)
 create table customer_address(
 customer_id int primary key,
 foreign key (customer_id) references customer (customer_id),
-postal_address int,
-postal_code int,
+postal_address varchar(20),
+postal_code varchar(10),
 city varchar(100),
 country_name varchar(200),
 current_status varchar(200)
@@ -68,8 +68,8 @@ current_status varchar(200)
 ----NO.9--
 create table address (
 address_id int primary key,
-postal_address int,
-postal_code int,
+postal_address varchar(20),
+postal_code varchar(20),
 city varchar(100),
 country_name varchar(200),
 current_status varchar(200)
